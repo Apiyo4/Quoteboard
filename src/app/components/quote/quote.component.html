@@ -1,10 +1,11 @@
+<app-quote-form></app-quote-form>
 <div class="container-fliud">
   <h2 class="text-center">Quotes</h2>
   <div class="card card-body" *ngFor='let quote of quotes'>
     <blockquote class="blockquote">
       <ul>
         <li>{{quote.quoteWords}}</li>
-        <app-quote-details [quote]="quote" (isComplete)=deleteQuote($event,i)></app-quote-details>
+        <app-quote-details [quote]="quote" (isAdd)="addQuote($event,i)" (isComplete)="deleteQuote($event,i)"></app-quote-details>
       </ul>
     </blockquote>
     <p class= "text-center">Submitted by {{quote.name}}</p>

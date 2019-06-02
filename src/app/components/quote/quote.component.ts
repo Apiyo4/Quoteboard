@@ -7,10 +7,15 @@ import { Quote } from "../.././quote"
 })
 export class QuoteComponent implements OnInit {
   quotes = [
-    new Quote("Annette", "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.","Helen Keller"),
-    new Quote("Annette", "Do not go where the path may lead, go instead where there is no path and leave a trail.","Ralph Waldo Emerson"),
-    new Quote("Annette", "Tell me and I forget. Teach me and I remember. Involve me and I learn.","Benjamin Franklin"),
+    new Quote("Annette", "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.","Helen Keller", 0),
+    new Quote("Annette", "Do not go where the path may lead, go instead where there is no path and leave a trail.","Ralph Waldo Emerson", 0),
+    new Quote("Annette", "Tell me and I forget. Teach me and I remember. Involve me and I learn.","Benjamin Franklin", 0),
   ]
+addQuote(isAdd, index){
+  if(isAdd){
+    this.quotes[index].like+=1;
+  }
+}
   deleteQuote(isComplete,index){
     if (isComplete){
       let toDelete= confirm(`Do you want to delete?`)
@@ -18,12 +23,8 @@ export class QuoteComponent implements OnInit {
         this.quotes.splice(index,1);
       }
     }
-
-
   }
   constructor() { }
-
   ngOnInit() {
   }
-
 }
