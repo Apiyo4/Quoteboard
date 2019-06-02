@@ -3,7 +3,7 @@
   <div class="card card-body" *ngFor='let quote of quotes'>
     <blockquote class="blockquote">
       <ul>
-        <li class="mb-0">{{quote.quoteWords}}</li>
+        <li>{{quote.quoteWords}}</li>
         <app-quote-details [quote]="quote"></app-quote-details>
       </ul>
     </blockquote>
