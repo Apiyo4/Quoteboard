@@ -11,7 +11,16 @@ export class QuoteComponent implements OnInit {
     new Quote("Annette", "Do not go where the path may lead, go instead where there is no path and leave a trail.","Ralph Waldo Emerson"),
     new Quote("Annette", "Tell me and I forget. Teach me and I remember. Involve me and I learn.","Benjamin Franklin"),
   ]
+  deleteQuote(isComplete,index){
+    if (isComplete){
+      let toDelete= confirm(`Do you want to delete?`)
+      if (toDelete){
+        this.quotes.splice(index,1);
+      }
+    }
 
+
+  }
   constructor() { }
 
   ngOnInit() {
