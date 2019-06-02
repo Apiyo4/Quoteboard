@@ -13,6 +13,6 @@
         <app-quote-details [quote]="quote" (isAdd)="addQuote($event,i)" (isComplete)="deleteQuote($event,i)"></app-quote-details>
       </ul>
     </blockquote>
-    <p class= "text-center">Submitted by {{quote.name}} on {{quote.completeDate|date}}</p>
+    <p class= "text-center">Submitted by {{quote.name}} {{quote.completeDate|timeCount}} days ago</p>
   </div>
 </div>
