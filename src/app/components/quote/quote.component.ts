@@ -11,6 +11,9 @@ export class QuoteComponent implements OnInit {
     new Quote("Annette", "Do not go where the path may lead, go instead where there is no path and leave a trail.","Ralph Waldo Emerson", 0),
     new Quote("Annette", "Tell me and I forget. Teach me and I remember. Involve me and I learn.","Benjamin Franklin", 0),
   ]
+  addNewQuote(quote){
+    this.quotes.unshift(quote);
+  }
 addQuote(isAdd, index){
   if(isAdd){
     this.quotes[index].like+=1;
