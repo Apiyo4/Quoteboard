@@ -14,11 +14,12 @@ export class QuoteComponent implements OnInit {
   addNewQuote(quote){
     this.quotes.unshift(quote);
   }
-addQuote(isAdd, index){
-  if(isAdd){
-    this.quotes[index].like+=1;
+  showUserForm:boolean = false;
+  addQuote(isAdd, index){
+    if(isAdd){
+      this.quotes[index].like+=1;
+    }
   }
-}
   deleteQuote(isComplete,index){
     if (isComplete){
       let toDelete= confirm(`Do you want to delete?`)

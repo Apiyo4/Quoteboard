@@ -11,3 +11,7 @@ ul{
 p{
   font-size: 18px;
 }
+.butCenter button{
+  margin-left: 46%;
+  margin-top: 20px;
+}
