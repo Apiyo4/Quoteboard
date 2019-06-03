@@ -3,12 +3,12 @@
   <div class="row">
     <div ng-app="" class="col">
       <small ><button (click)='quoteAdd()'><i class="fa fa-thumbs-up"></i></button></small>
-      <p>Likes: {{quote.like}} </p>
+      <p>Upvote: {{quote.upVote}} </p>
     </div>
 
     <div class="col">
-      <small><button type="button" name="button"><i class="fa fa-thumbs-down"></i></button></small>
-      <p>Dislikes: </p>
+      <small><button (click)='quoteMinus()' type="button" name="button"><i class="fa fa-thumbs-down"></i></button></small>
+      <p>DownVote: {{quote.downVote}}  </p>
     </div>
   </div>
   <button  (click)='quoteDelete(true)' class="btn btn-danger text-center btn-sm">Delete Quote</button>
