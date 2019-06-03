@@ -9,7 +9,7 @@
   <div class="card card-body" *ngFor='let quote of quotes'>
     <blockquote class="blockquote">
       <ul>
-        <li>{{quote.quoteWords}}</li>
+        <li appHighlight>{{quote.quoteWords}}</li>
         <app-quote-details [quote]="quote" (isAdd)="addQuote($event,i)" (isComplete)="deleteQuote($event,i)"></app-quote-details>
       </ul>
     </blockquote>
