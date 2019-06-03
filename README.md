@@ -21,7 +21,7 @@ HTML was used to create the body, CSS to style it and Angular.
 In case of anything feel free to get in touch at odingoannette@gmail.com
 ### License
 *MIT* 
-Copyright (c) {2019} **Annette Odingo**
+Copyright (c) {2019} **Annette Odingo** https://github.com/Apiyo4/QuoteBoard/blob/master/LICENSE
 
 ## Development server
 
