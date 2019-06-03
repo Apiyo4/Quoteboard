@@ -15,7 +15,7 @@ export class QuoteComponent implements OnInit {
     this.quotes.unshift(quote);
   }
   showUserForm:boolean = false;
-  addQuote(isAdd, index){
+  quoteAdd(isAdd, index){
     if(isAdd){
       this.quotes[index].like+=1;
     }

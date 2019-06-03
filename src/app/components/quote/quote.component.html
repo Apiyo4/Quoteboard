@@ -1,3 +1,8 @@
+<nav class="navbar navbar-dark bg-info">
+  <div class="container">
+    <a href="#">Quotes</a>
+  </div>
+</nav>
 <div class="butCenter">
     <button (click)="showUserForm = !showUserForm" type="button" name="button" class="btn btn-info">Add Quote</button>
     <div *ngIf='showUserForm' class="card card-body">
@@ -10,7 +15,7 @@
     <blockquote class="blockquote">
       <ul>
         <li appHighlight>{{quote.quoteWords}}</li>
-        <app-quote-details [quote]="quote" (isAdd)="addQuote($event,i)" (isComplete)="deleteQuote($event,i)"></app-quote-details>
+        <app-quote-details [quote]="quote" (isAdd)="quoteAdd($event,i)" (isComplete)="deleteQuote($event,i)"></app-quote-details>
       </ul>
     </blockquote>
     <p class= "text-center">Submitted by {{quote.name}} {{quote.completeDate|timeCount}} days ago</p>

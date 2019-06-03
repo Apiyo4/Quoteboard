@@ -1,6 +1,7 @@
 .card{
   max-width: 60%;
   margin-left: 20%;
+  background-color: #D9F0FF;
 }
 h2{
   margin-top: 30px;
@@ -14,4 +15,10 @@ p{
 .butCenter button{
   margin-left: 46%;
   margin-top: 20px;
+}
+.container a{
+  color: white;
+  font-size : 24px;
+  text-align: center;
+  margin-left: 46%;
 }

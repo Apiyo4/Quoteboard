@@ -10,6 +10,7 @@ import { TimeCountPipe } from './time-count.pipe';
 import { HighlightDirective } from './highlight.directive';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { HighlightDirective } from './highlight.directive';
     QuoteDetailsComponent,
     QuoteFormComponent,
     TimeCountPipe,
-    HighlightDirective
+    HighlightDirective,
+
   ],
   imports: [
     BrowserModule,
